@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#5C5451">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp">
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yuanjiaobiankuang"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="严禁出现违反国家法律法规的行为。 一旦发现我们会立即封号。"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_marginTop="45dp"
+                android:id="@+id/photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_normal"
+                android:visibility="visible"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="4dip"
+                tools:src="@drawable/logo" />
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@+id/photo"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            tools:text="李小四"
+            android:textColor="#fafafa"
+            android:textSize="20dip" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等待对方接受邀请。。。"
+            android:textColor="#fafafa"
+            android:textSize="15dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/exit_tuichu"
+        android:layout_margin="25dip"
+        android:gravity="center"
+        android:background="#30808080"
+        >
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exit_tuichu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/callingControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/voice_gkjishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/voice_gkjy"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voice_nojingyin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/voice_gkgd"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voice_cancle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/voice_gkmt"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voice_nomianti" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

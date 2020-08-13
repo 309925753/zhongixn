@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/yy_openredpacket_bg"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/title_ly"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:id="@+id/ll_back_left"
+                android:layout_width="60dp"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/red_back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/return_icon"
+                android:tint="@color/red_padket_lightglod" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/title_red_packet"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/get_redlist_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/red_packet_history"
+                android:textColor="@color/red_padket_lightglod"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_redfrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_ly"
+            android:gravity="center_horizontal">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/red_head_iv"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_normal"
+                android:visibility="visible"
+                app:riv_corner_radius="6dp"
+                app:riv_oval="false"
+                tools:src="@drawable/avatar_normal" />
+
+            <TextView
+                android:id="@+id/red_nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/red_head_iv"
+                android:layout_alignBottom="@+id/red_head_iv"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/red_head_iv"
+                android:gravity="center"
+                android:textColor="@color/red_padket_lightglod"
+                android:textSize="14sp"
+                tools:text="烟雨的红包" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/red_words_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/rl_redfrom"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/best_wishes"
+            android:textColor="@color/red_padket_lightglod"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/red_words_tv"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/get_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_padket_lightglod"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                tools:text="0.01" />
+
+            <TextView
+                android:id="@+id/get_money_bit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/get_money_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/get_money_tv"
+                android:textColor="@color/red_padket_lightglod"
+                android:textSize="20sp"
+                tools:text="元" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/reply_red_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_money"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="@string/reply_red_thank"
+            android:textColor="@color/red_padket_lightglod"
+            android:textSize="@dimen/sp_15_text_size" />
+
+
+    </RelativeLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/normal_bg" />
+
+    <TextView
+        android:id="@+id/red_resultmsg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/example_red_packet_remain"
+        android:textColor="@color/Grey_600"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/normal_bg" />
+
+    <ListView
+        android:id="@+id/red_details_lsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/normal_bg"
+        android:dividerHeight="0.1dip"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+</LinearLayout>

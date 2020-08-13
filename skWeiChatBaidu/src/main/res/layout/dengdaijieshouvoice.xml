@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C5451">
+
+    <RelativeLayout
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="170dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yuanjiaobiankuang"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="严禁出现违反国家法律法规的行为。 一旦发现我们会立即封号。"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar_normal"
+        android:visibility="visible"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="4dip"
+        app:riv_oval="true"
+        tools:src="@drawable/logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:textColor="#fafafa"
+            android:textSize="20dip"
+            tools:text="李小四" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="邀请您进行语音通话"
+            android:textColor="#fafafa"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_talk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/voice_gk_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_voice_jingyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voice_nojingyin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_voice_gd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voice_guaduan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_voice_mianti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/voice_mt"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voice_nomianti" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/ll_un_talk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dip"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_voice_guaduan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/voice_guaduan" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_voice_jieting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/voice_jieting" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

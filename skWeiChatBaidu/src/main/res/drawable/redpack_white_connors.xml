@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="6dp"/>
+
+    <solid android:color="@color/white"/>
+
+    <!--<stroke-->
+        <!--android:width="dimension"   //描边的宽度-->
+    <!--android:color="color"   //描边的颜色-->
+    <!--// 以下两个属性设置虚线-->
+    <!--android:dashWidth="dimension"   //虚线的宽度，值为0时是实线-->
+    <!--android:dashGap="dimension" />      //虚线的间隔-->
+
+</shape>
